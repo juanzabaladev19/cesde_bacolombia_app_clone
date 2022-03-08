@@ -7,7 +7,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.bancolombiaapp.databinding.ActivityPinImgBinding;
 
@@ -27,6 +29,7 @@ public class PinImgActivity extends AppCompatActivity {
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(charSequence.toString().equals("")){
                     pinImgBinding.btnContinuar.setBackgroundColor(Color.GRAY);
+
                     return;
                 }else{
                     pinImgBinding.btnContinuar.setBackgroundColor(Color.GRAY);
@@ -43,10 +46,19 @@ public class PinImgActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 if(editable.toString().equals("")){
                     pinImgBinding.btnContinuar.setBackgroundColor(Color.GRAY);
+
                     return;
                 }else{
                     pinImgBinding.btnContinuar.setBackgroundColor(Color.YELLOW);
-                    return;
+                    Toast.makeText(PinImgActivity.this, "length:" + editable.length(), Toast.LENGTH_SHORT).show();
+                    if(editable.length() ==4){
+                        pinImgBinding.btnContinuar.setBackgroundColor(Color.YELLOW);
+                        return;
+                    }else{
+                        pinImgBinding.btnContinuar.setBackgroundColor(Color.GRAY);
+                        return;
+                    }
+
                 }
             }
         });

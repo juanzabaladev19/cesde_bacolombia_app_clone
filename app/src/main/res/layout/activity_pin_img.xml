@@ -161,7 +161,6 @@
         app:cursorColor="@color/black"
         app:cursorWidth="2dp"
         app:hideLineWhenFilled="true"
-        app:lineColor="@color/yellow"
         app:itemCount="4"
         app:itemHeight="48dp"
         app:itemRadius="4dp"
@@ -173,7 +172,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline15"
         app:layout_constraintVertical_bias="0.416"
-        app:viewType="rectangle">
+        app:lineColor="@color/yellow"
+        app:viewType="rectangle"
+        tools:ignore="SpeakableTextPresentCheck">
 
     </com.chaos.view.PinView>
 
