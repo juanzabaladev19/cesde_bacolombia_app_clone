@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SaldosMovimientos</string>
+    <string name="Volver">Volver</string>
+    <string name="Cuentas">CUENTAS</string>
+    <string name="CuentaAhorros">Cuenta de Ahorro</string>
+    <string name="Ahorros">Ahorros</string>
+    <string name="SaldoDisponible">Saldo disponible</string>
+    <string name="Cuenta">023-687602-66</string>
+    <string name="Saldo">$ 26.969,91</string>
+    <string name="DetallesProducto">Detalles del producto</string>
+    <string name="Movimientos">Movimientos</string>
+    <string name="TransferirDinero">Transferir dinero</string>
+    <string name="DiaDia">Ir a Día a Día</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Continuar">Continuar</string>
+    <string name="Transferir">TRANSFERIR DINERO</string>
+    <string name="Valor">Valor</string>
+    <string name="IngresaValor">Ingresa valor a transferir</string>
+</resources>
