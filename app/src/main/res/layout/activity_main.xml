@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtIngresarUsuario"
+        android:id="@+id/txtHola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¡Hola!"
@@ -30,9 +30,9 @@
         android:layout_height="60dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:onClick="goToPinImg"
         android:paddingBottom="10dp"
         android:text="Continuar"
+        android:onClick="userValidation"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:cornerRadius="30dp"
@@ -122,34 +122,34 @@
     <Button
         android:id="@+id/btnCerrar"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/transparent"
         android:drawableLeft="@drawable/ic_baseline_close_24"
         android:padding="2dp"
         android:text="@string/Cerrar"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="12dp"
+        android:textSize="14dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnContinuarArriba"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginEnd="0dp"
+        android:layout_height="wrap_content"
         android:background="@color/transparent"
         android:drawableRight="@drawable/ic_baseline_navigate_next_24"
         android:padding="2dp"
         android:text="Continuar"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="12dp"
+        android:textSize="14dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -185,7 +185,7 @@
             android:layout_marginEnd="0dp"
             android:background="@color/white"
             android:drawableLeft="@drawable/ic_baseline_person_outline_32"
-            android:textSize="17dp"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </com.google.android.material.textfield.TextInputLayout>
