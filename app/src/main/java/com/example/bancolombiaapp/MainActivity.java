@@ -20,6 +20,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.bancolombiaapp.databinding.ActivityMainBinding;
+import com.example.bancolombiaapp.models.LoginUsernameModel;
+import com.example.bancolombiaapp.requests.LoginUsernameRequest;
+import com.example.bancolombiaapp.services.LoginService;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,20 +30,27 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
+public class MainActivity extends AppCompatActivity {
 
     private com.example.bancolombiaapp.databinding.ActivityMainBinding mainBinding;
     private String username;
     private  String usernameJson;
-
+    private Retrofit retrofit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = mainBinding.getRoot();
         setContentView(view);
-
+        retrofit = new Retrofit.Builder()
+                .baseUrl("http://10.2.5.112/cesde_backend_bancolombia_app_clone/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
         mainBinding.btnContinuarArriba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,66 +100,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //recibiendo las respuestas en json
-    public void userValidation(View view) throws JSONException {
+    public void userValidation(View view) {
         username = mainBinding.etIngresarUsuario.getText().toString();
-        //JSONObject json = new JSONObject();
-        //json.put("username",username);
-        //usernameJson = (json.toString());
-
-        //final TextView textView = (TextView) findViewById(R.id.text);
-        // ...
-        // Instantiate the RequestQueue.
-        RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://192.168.43.39:8080/backend/auth/auth_username.php";
-        // Request a string response from the provided URL.
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                Log.d("VOLLEY",response);
-                                // Display the first 500 characters of the response string.
-                                //textView.setText("Response is: "+ response.substring(0,500));
-                                try {
-                                    JSONObject jsonObject = new JSONObject(response);
-                                    String img = jsonObject.optString("img","null");
-                                    String error = jsonObject.optString("error","ok");
-                                    if(error.equals("Usuario no existe")){
-                                        Toast.makeText(getApplicationContext(),
-                                                "Failure Login: "+error, Toast.LENGTH_SHORT).show();
-                                    }else if(error.equals("ok")){
-                                        Toast.makeText(getApplicationContext(),
-                                                "Success Login: "+img, Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(),PinImgActivity.class);
-                                        intent.putExtra("img",img);
-                                        intent.putExtra("username",username);
-                                        startActivity(intent);
-                                    }
-                                } catch (JSONException e) {
-                                    //e.printStackTrace();
-                                    Toast.makeText(getApplicationContext(),
-                                            "Error JSON"+e.getMessage(), Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }, new Response.ErrorListener() {
-
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        //textView.setText("That didn't work!");
-                        Toast.makeText(getApplicationContext(),
-                                "error"+error.getMessage().toString(
-                                ), Toast.LENGTH_SHORT).show();
+        LoginService loginService = retrofit.create(LoginService.class);
+        LoginUsernameRequest loginRequest = new LoginUsernameRequest();
+        loginRequest.setUsername(username);
+        Call<LoginUsernameModel> loginUsernameService = loginService.loginUsername(loginRequest);
+        loginUsernameService.enqueue(new Callback<LoginUsernameModel>() {
+            @Override
+            public void onResponse(Call<LoginUsernameModel> call, retrofit2.Response<LoginUsernameModel> response) {
+                if(response.isSuccessful()){
+                    LoginUsernameModel loginResponse = response.body();
+                    if(loginResponse.getError().length() > 0 || loginResponse.getImg().length() < 1){
+                        Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
                     }
-                }){
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String,String> data = new HashMap<>();
-                        data.put("username",username);
-
-                        return data;
+                    else{
+                        Intent intent = new Intent(getApplicationContext(), PinImgActivity.class);
+                        intent.putExtra("username", username);
+                        intent.putExtra("img", loginResponse.getImg());
+                        startActivity(intent);
                     }
-                };
-        // Add the request to the RequestQueue.
-        queue.add(stringRequest);
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Error en la respuesta", Toast.LENGTH_SHORT).show();
+                }
+            }
+            @Override
+            public void onFailure(Call<LoginUsernameModel> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "!opps, tuvimos un error, revisa tu conexión a internet", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
-
 }
