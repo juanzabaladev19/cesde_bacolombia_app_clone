@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         View view = mainBinding.getRoot();
         setContentView(view);
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.2.5.112/cesde_backend_bancolombia_app_clone/")
+                .baseUrl("http://192.168.0.3:8080/cesde_backend_bancolombia_app_clone/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         mainBinding.btnContinuarArriba.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     LoginUsernameModel loginResponse = response.body();
                     if(loginResponse.getError().length() > 0 || loginResponse.getImg().length() < 1){
-                        Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Username Error", Toast.LENGTH_SHORT).show();
                     }
                     else{
                         Intent intent = new Intent(getApplicationContext(), PinImgActivity.class);
