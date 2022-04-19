@@ -12,23 +12,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.bancolombiaapp.databinding.ActivityMainBinding;
 import com.example.bancolombiaapp.models.LoginUsernameModel;
 import com.example.bancolombiaapp.requests.LoginUsernameRequest;
 import com.example.bancolombiaapp.services.LoginService;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -36,8 +23,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
-
-    private com.example.bancolombiaapp.databinding.ActivityMainBinding mainBinding;
+    private ActivityMainBinding mainBinding;
     private String username;
     private  String usernameJson;
     private Retrofit retrofit;
@@ -48,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         View view = mainBinding.getRoot();
         setContentView(view);
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.3:8080/cesde_backend_bancolombia_app_clone/")
+                .baseUrl("http://10.2.5.157/cesde_backend_bancolombia_app_clone/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         mainBinding.btnContinuarArriba.setOnClickListener(new View.OnClickListener() {

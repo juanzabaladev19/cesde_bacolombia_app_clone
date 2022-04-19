@@ -55,7 +55,7 @@ public class PinImgActivity extends AppCompatActivity {
         View view = pinImgBinding.getRoot();
         setContentView(view);
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.3:8080/cesde_backend_bancolombia_app_clone/")
+                .baseUrl("http://10.2.5.157/cesde_backend_bancolombia_app_clone/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         username = getIntent().getStringExtra("username");
