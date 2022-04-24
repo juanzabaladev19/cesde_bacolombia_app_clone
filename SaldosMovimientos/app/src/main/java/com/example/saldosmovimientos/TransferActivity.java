@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class TransfenciasActivity extends AppCompatActivity {
+public class TransferActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transfencias);
+        setContentView(R.layout.activity_transfer);
     }
 
     public void onClick(View view){
-        Intent miIntent= new Intent(TransfenciasActivity. this, MainActivity.class);
+        Intent miIntent= new Intent(TransferActivity. this, MainActivity.class);
         startActivity(miIntent);
     }
 }
