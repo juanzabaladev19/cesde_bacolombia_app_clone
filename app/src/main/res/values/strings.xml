@@ -3,4 +3,10 @@
     <string name="volver">Volver</string>
     <string name="Cerrar">Cerrar</string>
     <string name="Continuar">Continuar</string>
+    <string name="icon_home">Inicio</string>
+    <string name="icon_transactions">Transacciones</string>
+    <string name="icon_explorer">Explorar</string>
+    <string name="icon_request_products">Solicitar productos</string>
+    <string name="icon_settings">Ajustes</string>
+    <string name="home_greeting">Buenas tardes</string>
 </resources>

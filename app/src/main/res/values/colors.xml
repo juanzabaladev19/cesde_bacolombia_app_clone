@@ -12,7 +12,9 @@
     <color name="yellow">#ffea00</color>
     <color name="grey">#9e9e9e</color>
     <color name="greyVariant">#707070</color>
-
+    <color name="bc_black">#FF000000</color>
+    <color name="bc_yellow">#FFF6DA52</color>
+    <color name="bc_grey_light">#FFF4F4F4</color>
 
 
 </resources>
