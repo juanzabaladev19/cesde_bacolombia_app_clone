@@ -1,5 +1,6 @@
 package com.example.saldosmovimientos.models;
 
+import java.sql.Time;
 import java.util.Date;
 import java.util.Timer;
 
@@ -9,7 +10,7 @@ public class TransactionsModel {
     private String type;
     private double amount;
     private Date date;
-    private Timer hour;
+    private Time hour;
     private String transaction_number;
 
     public String getOrigin_account() {
@@ -52,11 +53,11 @@ public class TransactionsModel {
         this.date = date;
     }
 
-    public Timer getHour() {
+    public Time getHour() {
         return hour;
     }
 
-    public void setHour(Timer hour) {
+    public void setHour(Time hour) {
         this.hour = hour;
     }
 
@@ -67,6 +68,4 @@ public class TransactionsModel {
     public void setTransaction_number(String transaction_number) {
         this.transaction_number = transaction_number;
     }
-
-
 }
