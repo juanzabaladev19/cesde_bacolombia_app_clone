@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name=".activity_list_transfer"
+            android:name=".ListTransferActivity"
             android:exported="false" />
         <activity
             android:name=".TransferActivity"
