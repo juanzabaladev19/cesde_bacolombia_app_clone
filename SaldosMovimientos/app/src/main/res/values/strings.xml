@@ -16,4 +16,16 @@
     <string name="Transferir">TRANSFERIR DINERO</string>
     <string name="Valor">Valor</string>
     <string name="IngresaValor">Ingresa valor a transferir</string>
+    <string name="monto">Monto de la transferencia</string>
+    <string name="fecha">Fecha de la transaccion</string>
+    <string name="tipoCuenta">Tipo de cuenta</string>
+    <string name="title_activity_list_transfer">activity_list_transfer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
