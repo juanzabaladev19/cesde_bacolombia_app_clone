@@ -9,33 +9,35 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.saldosmovimientos.databinding.ActivityMainBinding;
+import com.example.saldosmovimientos.databinding.TransactionItemBinding;
 import com.example.saldosmovimientos.entities.TransferEntity;
+import com.example.saldosmovimientos.models.TransactionsModel;
 
 import java.util.ArrayList;
 import java.util.Date;
 
 public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.TransferViewHolder> {
     private Context context;
-    private ArrayList<TransferEntity> transferArrayList;
-    public TransferAdapter(Context context, ArrayList<TransferEntity> transferArrayList) {
+    private ArrayList<TransactionsModel> transferArrayList;
+    public TransferAdapter(Context context, ArrayList<TransactionsModel> transferArrayList) {
         this.context = context;
         this.transferArrayList = transferArrayList;
     }
 
-    private ActivityMainBinding mainBinding;
+    private TransactionItemBinding itemBinding;
     @NonNull
     @Override
     public TransferAdapter.TransferViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-       mainBinding = ActivityMainBinding.inflate(LayoutInflater.from(context));
-        return new TransferViewHolder(mainBinding);
+        itemBinding = TransactionItemBinding.inflate(LayoutInflater.from(context));
+        return new TransferViewHolder(itemBinding);
     }
 
     @Override
     public void onBindViewHolder(@NonNull TransferAdapter.TransferViewHolder holder, int position) {
-        TransferEntity transfer = transferArrayList.get(position);
-        holder.mainBinding.tvMonto.setText(String.valueOf(transfer.getAmount()));
+        TransactionsModel transfer = transferArrayList.get(position);
+        holder.itemBinding.tvMonto.setText(String.valueOf(transfer.getAmount()));
         //holder.mainBinding.tvFecha.setText(Date.from(transfer.getDate());
-        holder.mainBinding.tvTipoCuenta.setText(transfer.getType());
+        holder.itemBinding.tvTipoCuenta.setText(transfer.getType());
     }
 
     @Override
@@ -44,10 +46,10 @@ public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.Transf
     }
 
     public class TransferViewHolder extends RecyclerView.ViewHolder {
-        ActivityMainBinding mainBinding;
-        public TransferViewHolder(@NonNull ActivityMainBinding  itemView) {
+        TransactionItemBinding itemBinding;
+        public TransferViewHolder(@NonNull TransactionItemBinding  itemView) {
             super(itemView.getRoot());
-            this.mainBinding = itemView;
+            this.itemBinding = itemView;
         }
     }
 }

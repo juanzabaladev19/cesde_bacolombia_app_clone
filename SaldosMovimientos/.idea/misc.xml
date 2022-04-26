@@ -18,6 +18,11 @@
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/content_activity_list_transfer.xml" value="0.27291666666666664" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_first.xml" value="0.27291666666666664" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
+        <entry key="app/src/main/res/layout/activity_list_transfer.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23717948717948717" />
+        <entry key="app/src/main/res/layout/activity_transfer.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/transaction_item.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/transaction_item2.xml" value="0.2015625" />
       </map>
     </option>
   </component>

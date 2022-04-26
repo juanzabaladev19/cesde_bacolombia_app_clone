@@ -9,8 +9,27 @@ public class TransactionsModel {
     private String destination_account;
     private String type;
     private double amount;
-    private Date date;
-    private Time hour;
+    //private Date date;
+    //private Time hour;
+    private String date;
+    private String hour;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getHour() {
+        return hour;
+    }
+
+    public void setHour(String hour) {
+        this.hour = hour;
+    }
+
     private String transaction_number;
 
     public String getOrigin_account() {
@@ -45,7 +64,7 @@ public class TransactionsModel {
         this.amount = amount;
     }
 
-    public Date getDate() {
+    /*public Date getDate() {
         return date;
     }
 
@@ -59,7 +78,7 @@ public class TransactionsModel {
 
     public void setHour(Time hour) {
         this.hour = hour;
-    }
+    }*/
 
     public String getTransaction_number() {
         return transaction_number;
