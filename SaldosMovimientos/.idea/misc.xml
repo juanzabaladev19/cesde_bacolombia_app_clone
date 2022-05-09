@@ -11,12 +11,15 @@
         <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_payments_24.xml" value="0.141" />
         <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_transfencias.xml" value="0.33" />
+<<<<<<< HEAD
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_arrow_back_ios_24.xml" value="0.121" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_monetization_on_24.xml" value="0.121" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_payments_24.xml" value="0.121" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_query_stats_24.xml" value="0.121" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_search_24.xml" value="0.121" />
+=======
+>>>>>>> 44d3e85ae2734c2bd20d9260ebb950500f533637
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_list_transfer.xml" value="0.27291666666666664" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_transfencias.xml" value="0.27291666666666664" />
@@ -24,8 +27,11 @@
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/content_activity_list_transfer.xml" value="0.27291666666666664" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_first.xml" value="0.27291666666666664" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
+<<<<<<< HEAD
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/transaction_item.xml" value="0.33" />
         <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/transaction_item2.xml" value="0.27291666666666664" />
+=======
+>>>>>>> 44d3e85ae2734c2bd20d9260ebb950500f533637
         <entry key="app/src/main/res/layout/activity_list_transfer.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23717948717948717" />
         <entry key="app/src/main/res/layout/activity_transfer.xml" value="0.1" />

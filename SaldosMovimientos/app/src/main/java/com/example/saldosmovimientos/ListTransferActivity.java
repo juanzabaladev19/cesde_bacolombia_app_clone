@@ -25,7 +25,10 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ListTransferActivity extends AppCompatActivity {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44d3e85ae2734c2bd20d9260ebb950500f533637
     private ActivityListTransferBinding listTransferBinding;
     private MainActivity mainActivity;
     private ArrayList<TransactionsModel> transfersArrayList;
@@ -40,7 +43,11 @@ public class ListTransferActivity extends AppCompatActivity {
         View view = listTransferBinding.getRoot();
         setContentView(view);
         retrofit = new Retrofit.Builder()
+<<<<<<< HEAD
                 .baseUrl("http://192.168.1.6/cesde_backend_bancolombia_app_clone/")
+=======
+                .baseUrl("http://10.2.6.18/cesde_backend_bancolombia_app_clone/")
+>>>>>>> 44d3e85ae2734c2bd20d9260ebb950500f533637
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         transfersArrayList = new ArrayList<>();

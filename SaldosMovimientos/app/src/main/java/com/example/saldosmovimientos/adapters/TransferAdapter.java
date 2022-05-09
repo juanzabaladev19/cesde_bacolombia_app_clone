@@ -17,7 +17,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.TransferViewHolder> {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44d3e85ae2734c2bd20d9260ebb950500f533637
     private Context context;
     private ArrayList<TransactionsModel> transferArrayList;
     public TransferAdapter(Context context, ArrayList<TransactionsModel> transferArrayList) {
