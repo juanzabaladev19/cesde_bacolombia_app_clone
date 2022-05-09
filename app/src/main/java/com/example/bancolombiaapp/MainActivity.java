@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         View view = mainBinding.getRoot();
         setContentView(view);
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.2.5.157/cesde_backend_bancolombia_app_clone/")
+                .baseUrl("http://192.168.1.6/cesde_backend_bancolombia_app_clone/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         mainBinding.btnContinuarArriba.setOnClickListener(new View.OnClickListener() {

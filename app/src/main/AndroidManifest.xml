@@ -14,10 +14,19 @@
         android:theme="@style/Theme.BancolombiaApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MyProducts"
+            android:name=".ListTransferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransferActivity"
             android:exported="false" />
         <activity
             android:name=".HomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyProducts"
+            android:exported="false" />
+        <activity
+            android:name=".MovementsActivity"
             android:exported="false" />
         <activity
             android:name=".OriginAccountActivity"

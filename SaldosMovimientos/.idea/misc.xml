@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/frontDomingoNoche/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_list_transfer.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Hervis Jonathan/Desktop/frontDomingoNoche/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_arrow_forward_ios_24.xml" value="0.141" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_close_24.xml" value="0.141" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_monetization_on_24.xml" value="0.141" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_payments_24.xml" value="0.141" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/Desktop/BancolombiaMovil/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_transfencias.xml" value="0.33" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_arrow_back_ios_24.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_monetization_on_24.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_payments_24.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_query_stats_24.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/drawable/outline_search_24.xml" value="0.121" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_list_transfer.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_transfencias.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/activity_transfer.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/content_activity_list_transfer.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_first.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/transaction_item.xml" value="0.33" />
+        <entry key="..\:/xampp/htdocs/cesde_bacolombia_app_clone/SaldosMovimientos/app/src/main/res/layout/transaction_item2.xml" value="0.27291666666666664" />
+        <entry key="app/src/main/res/layout/activity_list_transfer.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23717948717948717" />
+        <entry key="app/src/main/res/layout/activity_transfer.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/transaction_item.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/transaction_item2.xml" value="0.2015625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
