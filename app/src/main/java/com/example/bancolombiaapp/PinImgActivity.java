@@ -19,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.example.bancolombiaapp.config.RetrofitConfig;
 import com.example.bancolombiaapp.databinding.ActivityPinImgBinding;
 import com.example.bancolombiaapp.models.PinModel;
 import com.example.bancolombiaapp.requests.PinRequest;
@@ -44,7 +45,6 @@ public class PinImgActivity extends AppCompatActivity {
     private String user;
     private String img;
     private String fullname;
-    private Retrofit retrofit;
     ImageView imageView;
 
 
@@ -54,10 +54,6 @@ public class PinImgActivity extends AppCompatActivity {
         pinImgBinding = ActivityPinImgBinding.inflate(getLayoutInflater());
         View view = pinImgBinding.getRoot();
         setContentView(view);
-        retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.2.5.157/cesde_backend_bancolombia_app_clone/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
         username = getIntent().getStringExtra("username");
         img = getIntent().getStringExtra("img");
 
@@ -72,12 +68,9 @@ public class PinImgActivity extends AppCompatActivity {
 
         pinImgBinding.btnContinuar.setEnabled(false);
         pinImgBinding.btnContinuar.setBackgroundColor(Color.GRAY);
-        pinImgBinding.btnVolver.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
-            }
+        pinImgBinding.btnVolver.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(intent);
         });
 
 
@@ -130,7 +123,7 @@ public class PinImgActivity extends AppCompatActivity {
     //Recibiendo las respuestas JSON
     public  void pinValidate(View view){
         pin = Integer.parseInt(pinImgBinding.pinView.getText().toString());
-        PinService pinService = retrofit.create(PinService.class);
+        PinService pinService = RetrofitConfig.build().create(PinService.class);
         PinRequest pinRequest = new PinRequest();
         pinRequest.setPin(pin);
         pinRequest.setUsername(username);
