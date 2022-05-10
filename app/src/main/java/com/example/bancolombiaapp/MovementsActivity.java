@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.bancolombiaapp.adapters.TransferAdapter;
+import com.example.bancolombiaapp.config.RetrofitConfig;
 import com.example.bancolombiaapp.databinding.ActivityMovementsBinding;
 import com.example.bancolombiaapp.models.TransactionsModel;
 import com.example.bancolombiaapp.requests.TransactionRequest;
@@ -29,19 +30,13 @@ public class MovementsActivity extends AppCompatActivity {
     private ArrayList<TransactionsModel> transferArrayList;
     private TransferAdapter transferAdapter;
     private int pageCount = 0;
-    private Retrofit retrofit;
     private ArrayList<TransactionsModel> transactionsModelArrayList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         movementsBinding=ActivityMovementsBinding.inflate(getLayoutInflater());
         View view =movementsBinding.getRoot();
         setContentView(view);
-        retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.6/cesde_backend_bancolombia_app_clone/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
         transferArrayList = new ArrayList<>();
         transferAdapter = new TransferAdapter(this, transferArrayList);
         movementsBinding.rvListTransfers.setHasFixedSize(true);
@@ -55,7 +50,7 @@ public class MovementsActivity extends AppCompatActivity {
     }
 
     public void listTransfer(){
-        TransactionsServices transactionsServices = retrofit.create(TransactionsServices.class);
+        TransactionsServices transactionsServices = RetrofitConfig.build().create(TransactionsServices.class);
         TransactionRequest transactionRequest = new TransactionRequest();
         transactionRequest.setPageCount(pageCount);
         Call<List<TransactionsModel>> transactionUserService = transactionsServices.transactionUser(transactionRequest);

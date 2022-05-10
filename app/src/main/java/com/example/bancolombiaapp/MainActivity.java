@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.bancolombiaapp.config.RetrofitConfig;
 import com.example.bancolombiaapp.databinding.ActivityMainBinding;
 import com.example.bancolombiaapp.models.LoginUsernameModel;
 import com.example.bancolombiaapp.requests.LoginUsernameRequest;
@@ -19,30 +20,20 @@ import com.example.bancolombiaapp.services.LoginService;
 
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding mainBinding;
     private String username;
     private  String usernameJson;
-    private Retrofit retrofit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = mainBinding.getRoot();
         setContentView(view);
-        retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.6/cesde_backend_bancolombia_app_clone/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        mainBinding.btnContinuarArriba.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),PinImgActivity.class);
-                startActivity(intent);
-            }
+        mainBinding.btnContinuarArriba.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getApplicationContext(),PinImgActivity.class);
+            startActivity(intent);
         });
 
         mainBinding.txtNoCliente.setPaintFlags(mainBinding.txtNoCliente.getPaintFlags()| Paint.UNDERLINE_TEXT_FLAG);
@@ -88,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     //recibiendo las respuestas en json
     public void userValidation(View view) {
         username = mainBinding.etIngresarUsuario.getText().toString();
-        LoginService loginService = retrofit.create(LoginService.class);
+        LoginService loginService = RetrofitConfig.build().create(LoginService.class);
         LoginUsernameRequest loginRequest = new LoginUsernameRequest();
         loginRequest.setUsername(username);
         Call<LoginUsernameModel> loginUsernameService = loginService.loginUsername(loginRequest);
