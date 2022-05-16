@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitConfig {
 
     private static Retrofit retrofit;
-    private static final String serverIp = "172.18.81.116";
+    private static final String serverIp = "192.168.1.6";
     private static final String serverPort = "";
     private static final String baseUrl = "http://" + serverIp + serverPort + "/cesde_backend_bancolombia_app_clone/";
 

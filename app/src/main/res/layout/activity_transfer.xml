@@ -34,7 +34,7 @@
         android:onClick="onClick"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.037"
@@ -130,13 +130,13 @@
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/Continuar"
+        android:id="@+id/EnviarDinero"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
         android:drawableEnd="@drawable/outline_arrow_forward_ios_black_20"
         android:text="@string/Continuar"
+        android:textColor="@color/black"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"

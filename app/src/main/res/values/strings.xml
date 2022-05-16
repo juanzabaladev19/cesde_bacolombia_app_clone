@@ -27,5 +27,11 @@
     <string name="monto">Monto de la transferencia</string>
     <string name="fecha">Fecha de la transaccion</string>
     <string name="tipoCuenta">Tipo de cuenta</string>
+    <string name="enviarDinero">Enviar dinero</string>
+    <string name="NoLocal">TRANSFERIR DINERO A PRODUCTOS NO INSCRITOS BANCOLOMBIA</string>
+    <string name="Verificar">Verifica la transferencia</string>
+    <string name="ProductoOrigen">Producto origen</string>
+    <string name="ValorEnviar">Valor a enviar</string>
+    <string name="Cambiar">Cambiar</string>
 
 </resources>
