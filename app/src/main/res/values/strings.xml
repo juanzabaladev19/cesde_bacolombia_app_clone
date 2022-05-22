@@ -33,5 +33,11 @@
     <string name="ProductoOrigen">Producto origen</string>
     <string name="ValorEnviar">Valor a enviar</string>
     <string name="Cambiar">Cambiar</string>
+    <string name="MontoEnviar">$ 25.000,00</string>
+    <string name="ProductoDestino">Producto destino</string>
+    <string name="CuentaDestino">123-698544-58</string>
+    <string name="TipoDestino">Ahorros / Bancolombia A la mano</string>
+    <string name="Costo">Costo</string>
+    <string name="ValorCosto">$ 0,00</string>
 
 </resources>
