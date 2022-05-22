@@ -24,7 +24,6 @@ import retrofit2.Callback;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding mainBinding;
     private String username;
-    private  String usernameJson;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,6 +17,11 @@
     <color name="bc_grey_light">#FFF4F4F4</color>
     <color name="Yellow">#ffff00</color>
     <color name="Fondo">#FBF9F9</color>
+    <color name="gestionarDia">#E1BEE7</color>
+    <color name="hogarYservicios">#A5D6A7</color>
+    <color name="transporte">#FFEE58</color>
+    <color name="paraTi">#FFAB91</color>
+
 
 
 </resources>

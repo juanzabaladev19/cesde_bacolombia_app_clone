@@ -27,5 +27,21 @@
     <string name="monto">Monto de la transferencia</string>
     <string name="fecha">Fecha de la transaccion</string>
     <string name="tipoCuenta">Tipo de cuenta</string>
+    <string name="gestionarDiaDia">Gestionar día a día</string>
+    <string name="hogarYservicios">Hogar y servicios</string>
+    <string name="transporte">Transporte</string>
+    <string name="paraTi">Para ti</string>
+    <string name="diaAdia">Día a Día</string>
+    <string name="bolsillo">Bolsillos</string>
+    <string name="tu360">Tu360 Inmoviliario</string>
+    <string name="contratarMisAliados">Contratar Mis Aliados</string>
+    <string name="recargarCivica">Recargar Civica</string>
+    <string name="muverang">Muverang</string>
+    <string name="tu360Movilidad">Tu360 Movilidad</string>
+    <string name="comprarSoat">Comprar SOAT</string>
+    <string name="puntosColombia">Puntos Colombia</string>
+    <string name="ofertas">Ofertas</string>
+    <string name="tu360Compras">Tu360 Compras</string>
+    <string name="comprarFlypass">Comprar Flypass</string>
 
 </resources>

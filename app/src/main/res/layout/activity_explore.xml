@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#A82525"
+    tools:context=".ExploreActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <include
+        android:id="@+id/bottomBarComponent"
+        layout="@layout/bottom_bar_component"
+        android:layout_width="402dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <TextView
+        android:id="@+id/txtExplora"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:text="Explorar"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ScrollView
+        android:layout_width="385dp"
+        android:layout_height="361dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22"
+        app:layout_constraintVertical_bias="0.346">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtExprore1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/gestionarDiaDia"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore1"
+                        android:layout_width="99dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_clean_hands_24"
+                        app:civ_circle_background_color="@color/gestionarDia" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore2"
+                        android:layout_width="99dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_gpp_good_24"
+                        app:civ_circle_background_color="@color/gestionarDia" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtExplore2"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/diaAdia"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore3"
+                        android:layout_width="95dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/bolsillo"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtExplore4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/hogarYservicios"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore3"
+                        android:layout_width="99dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_home_black_48dp"
+                        app:civ_circle_background_color="@color/hogarYservicios" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore4"
+                        android:layout_width="99dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_diversity_3_24"
+                        app:civ_circle_background_color="@color/hogarYservicios" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtExplore5"
+                        android:layout_width="99dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/tu360"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore6"
+                        android:layout_width="104dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/contratarMisAliados"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtExplore10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/transporte"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore7"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_credit_card_24"
+                        app:civ_circle_background_color="@color/transporte" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore8"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_stream_24"
+                        app:civ_circle_background_color="@color/transporte" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore9"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_directions_car_24"
+                        app:civ_circle_background_color="@color/transporte" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore13"
+                        android:layout_width="91dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_shield_moon_24"
+                        app:civ_circle_background_color="@color/transporte" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtExplore11"
+                        android:layout_width="87dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/recargarCivica"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore12"
+                        android:layout_width="84dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/muverang"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore13"
+                        android:layout_width="87dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/tu360Movilidad"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore18"
+                        android:layout_width="81dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/comprarSoat"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore14"
+                        android:layout_width="91dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_flight_takeoff_24"
+                        app:civ_circle_background_color="@color/transporte" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtExplore19"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/comprarFlypass"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="274dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtExplore14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/paraTi"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore10"
+                        android:layout_width="91dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_baseline_mode_of_travel_24"
+                        app:civ_circle_background_color="@color/paraTi" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore11"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_carpenter_24"
+                        app:civ_circle_background_color="@color/paraTi" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgExplore12"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_shopping_cart_24"
+                        app:civ_circle_background_color="@color/paraTi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtExplore15"
+                        android:layout_width="81dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/puntosColombia"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore16"
+                        android:layout_width="81dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ofertas"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/txtExplore17"
+                        android:layout_width="81dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tu360Compras"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
