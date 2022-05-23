@@ -85,11 +85,11 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="395dp"
-        android:layout_height="44dp"
+        android:layout_width="387dp"
+        android:layout_height="45dp"
         android:gravity="left"
         android:text="@string/NoLocal"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +136,7 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline26"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline25"
         app:layout_constraintVertical_bias="1.0" />
@@ -156,7 +156,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline27"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline26"
         app:layout_constraintVertical_bias="1.0" />
@@ -176,7 +176,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline28"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline27"
         app:layout_constraintVertical_bias="1.0" />
@@ -197,7 +197,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline29"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline28"
         app:layout_constraintVertical_bias="1.0" />
@@ -218,15 +218,14 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline30"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <Button
         android:id="@+id/button3"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="137dp"
+        android:layout_width="129dp"
         android:layout_height="40dp"
         android:backgroundTint="@color/white"
         android:drawableEnd="@drawable/outline_arrow_forward_ios_black_20"
@@ -241,6 +240,171 @@
         app:layout_constraintTop_toTopOf="@+id/guideline29"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="375dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MontoEnviar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline30"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="410dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/ProductoDestino"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline22"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="131dp"
+        android:layout_height="38dp"
+        android:backgroundTint="@color/white"
+
+        android:drawableEnd="@drawable/outline_arrow_forward_ios_black_20"
+        android:onClick="onClick"
+        android:text="@string/Cambiar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="470dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="242dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TipoDestino"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/CuentaDestino"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="530dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="50dp"
+        android:layout_height="26dp"
+        android:text="@string/Costo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline32"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/ValorCosto"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="715dp" />
+
+    <Button
+        android:id="@+id/btnEnviarDInero"
+        android:layout_width="352dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/enviarDinero"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline33"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/Cancelar"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
