@@ -6,7 +6,7 @@
     <string name="icon_home">Inicio</string>
     <string name="icon_transactions">Transacciones</string>
     <string name="icon_explorer">Explorar</string>
-    <string name="icon_request_products">Solicitar productos</string>
+    <string name="icon_request_products">Trámites y solicitudes</string>
     <string name="icon_settings">Ajustes</string>
     <string name="home_greeting">Buenas tardes</string>
     <string name="Volver">Volver</string>
@@ -27,5 +27,15 @@
     <string name="monto">Monto de la transferencia</string>
     <string name="fecha">Fecha de la transaccion</string>
     <string name="tipoCuenta">Tipo de cuenta</string>
+    <string name="TramitesSolicitudes">Trámites y solicitudes</string>
+    <string name="agendarturno">Agendar turno en Sucursal</string>
+    <string name="solicitardocumento">Solicitar documentos</string>
+    <string name="inversion">Inversión virtual</string>
+    <string name="tarjetascredito">Tarjetas de crédito</string>
+    <string name="creditos">Créditos</string>
+    <string name="seguros">Seguros</string>
+    <string name="cuentas">Cuentas</string>
+    <string name="flypass">Flypass</string>
+    <string name="simuladores">Simuladores</string>
 
 </resources>
