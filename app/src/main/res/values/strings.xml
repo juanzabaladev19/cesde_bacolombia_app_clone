@@ -39,5 +39,7 @@
     <string name="TipoDestino">Ahorros / Bancolombia A la mano</string>
     <string name="Costo">Costo</string>
     <string name="ValorCosto">$ 0,00</string>
+    <string name="CerrarSesion">Cerrar sesion</string>
+    <string name="exito">¡Transferencia exitosa!</string>
 
 </resources>
