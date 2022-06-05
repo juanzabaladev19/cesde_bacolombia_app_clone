@@ -3,6 +3,7 @@ package com.example.bancolombiaapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +27,9 @@ public class HomeScreenActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeScreenActivity.this, MainActivity.class);
             startActivity(intent);
         });
-
+        homeScreenBinding.bottomBarComponent.iconTransactionLayout.setOnClickListener(view1 -> {
+            Intent intent=new Intent(getApplicationContext(),TransactionsActivity.class);
+            startActivity(intent);
+        });
     }
 }
