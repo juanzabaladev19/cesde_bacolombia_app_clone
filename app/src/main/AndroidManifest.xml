@@ -13,6 +13,12 @@
         android:theme="@style/Theme.BancolombiaApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Transferir_dineroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Producto_destinoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListTransferActivity"
             android:exported="false" />
         <activity
