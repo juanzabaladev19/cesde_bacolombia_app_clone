@@ -58,7 +58,7 @@
         app:srcCompat="@drawable/logo" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/linea1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -72,10 +72,10 @@
         android:text="@string/Cuentas"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/linea1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -98,12 +98,12 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
+        app:layout_constraintTop_toTopOf="@+id/linea1"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/linea2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -127,7 +127,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/SaldoDisponible"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:layout_constraintVertical_bias="0.941" />
 
@@ -162,7 +162,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/CantidadSaldo"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline8"
         app:layout_constraintVertical_bias="0.666" />
 
@@ -198,7 +198,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline10"
         app:layout_constraintEnd_toStartOf="@+id/Movimientos"
         app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
         app:layout_constraintVertical_bias="0.777" />
 
@@ -246,7 +246,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toStartOf="@+id/btnDiaDia"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline11"
         app:layout_constraintVertical_bias="0.484" />
 
@@ -304,7 +304,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline18"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/outline_search_black_36"
@@ -325,7 +325,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/linea2"
         app:layout_constraintTop_toTopOf="@+id/guideline19"
         app:layout_constraintVertical_bias="0.166" />
 

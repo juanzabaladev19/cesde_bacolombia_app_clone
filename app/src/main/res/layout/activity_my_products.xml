@@ -95,7 +95,7 @@
         app:layout_constraintGuide_begin="17dp" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/linea1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -106,14 +106,14 @@
         android:layout_width="49dp"
         android:layout_height="46dp"
         android:layout_marginEnd="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/linea1"
+        app:layout_constraintEnd_toStartOf="@+id/text1"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.28"
         app:srcCompat="@drawable/logo_bancolombia" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text1"
         android:layout_width="45dp"
         android:layout_height="18dp"
         android:layout_marginEnd="36dp"
@@ -121,12 +121,12 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/linea1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text2"
         android:layout_width="45dp"
         android:layout_height="18dp"
         android:layout_marginStart="55dp"
@@ -134,7 +134,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/linea1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.49" />
@@ -146,7 +146,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/linea1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_bias="0.666"
@@ -162,7 +162,7 @@
         app:layout_constraintGuide_begin="132dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -172,7 +172,7 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/linea1"
         app:layout_constraintVertical_bias="0.48" />
 
     <TextView
@@ -187,24 +187,24 @@
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/linea2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="194dp" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/card"
         android:layout_width="301dp"
         android:layout_height="55dp"
         app:cardCornerRadius="6dp"
         app:cardElevation="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6" >
+        app:layout_constraintTop_toTopOf="@+id/linea2" >
 
         <ImageButton
             android:id="@+id/btnEnviarDinero"
@@ -216,7 +216,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/card2"
         android:layout_width="301dp"
         android:layout_height="55dp"
         android:layout_marginTop="12dp"
@@ -224,7 +224,7 @@
         app:cardElevation="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/card">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -241,7 +241,7 @@
         app:cardElevation="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/card2">
 
         <ImageView
             android:id="@+id/imageView4"
