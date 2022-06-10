@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
 
     <LinearLayout
         android:id="@+id/iconHomeLayout"
@@ -16,8 +18,8 @@
         <ImageView
             android:id="@+id/ivIconHome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_home_black_36dp" />
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_iconos_home" />
 
         <TextView
             android:id="@+id/textView"
@@ -36,9 +38,9 @@
 
         <ImageView
             android:id="@+id/ivIconExplorer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_payments_black_36dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_iconos_tarjetas" />
 
         <TextView
             android:id="@+id/textView3"
@@ -57,9 +59,9 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_widgets_black_36dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_iconos_explorar" />
 
         <TextView
             android:id="@+id/textView4"
@@ -79,8 +81,8 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_add_shopping_cart_black_36dp" />
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_iconos_adminfacturas" />
 
         <TextView
             android:id="@+id/textView5"
@@ -100,8 +102,8 @@
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_settings_black_36dp" />
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_iconos_ajustes" />
 
         <TextView
             android:id="@+id/textView6"
