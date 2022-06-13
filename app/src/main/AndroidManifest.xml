@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BancolombiaApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ExploreActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListTransferActivity"
             android:exported="false" />
         <activity
