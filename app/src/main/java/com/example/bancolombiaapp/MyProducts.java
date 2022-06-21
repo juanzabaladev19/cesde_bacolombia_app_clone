@@ -10,6 +10,7 @@ import com.example.bancolombiaapp.databinding.ActivityMyProductsBinding;
 
 
 public class MyProducts extends AppCompatActivity {
+
     private ActivityMyProductsBinding myProductsBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

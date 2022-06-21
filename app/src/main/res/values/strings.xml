@@ -49,4 +49,11 @@
     <string name="misProductos">Mis productos Bancolombia</string>
     <string name="productosI">Productos inscritos</string>
     <string name="DeBanco">De Bancolombia</string>
+    <string name="otrosB">De otros bancos</string>
+    <string name="noInscritos">Productos no inscritos</string>
+    <string name="nequi">De nequi</string>
+    <string name="productI">Inscribir un producto</string>
+    <string name="tranferI">TRANSFERIR DINERO A PRODUCTOS NO INSCRITOS BANCOLOMBIA</string>
+    <string name="numProduct">Ingrese el numero del producto</string>
+
 </resources>

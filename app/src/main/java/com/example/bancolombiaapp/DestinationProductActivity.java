@@ -9,18 +9,15 @@ import android.widget.ImageButton;
 
 public class DestinationProductActivity extends AppCompatActivity {
 
-    ImageButton boton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destination_product);
 
-        boton=(ImageButton) findViewById(R.id.ImgAtras);
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(DestinationProductActivity.this,TransferActionActivity.class));
-            }
-        });
+    }
+    public void onClick(View v){
+        Intent i = new Intent(DestinationProductActivity.this, TransferActionActivity.class);
+        startActivity(i);
     }
 }

@@ -10,20 +10,17 @@ import android.widget.ImageButton;
 
 public class TransferActionActivity extends AppCompatActivity {
 
-    ImageButton Boton;
-    @SuppressLint("WrongViewCast")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transfer_action);
 
-        Boton= (ImageButton)findViewById(R.id.ImgBoton);
-        Boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(TransferActionActivity.this,DestinationProductActivity.class));
-            }
-        });
-
     }
+
+    public void onClick(View v){
+        Intent i = new Intent(TransferActionActivity.this, DestinationProductActivity.class);
+        startActivity(i);
+    }
+
 }
